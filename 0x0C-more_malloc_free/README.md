@@ -1,9 +1,9 @@
 ## A program README.md by Lawrence M – cohort 13
 
-Project
+##Project
 0x0C. C - More malloc, free
 
-Task 0
+###Task 0
 Write a function that allocates memory using malloc.
 •	Prototype: void *malloc_checked(unsigned int b);
 •	Returns a pointer to the allocated memory
@@ -12,8 +12,9 @@ Repo:
 •	GitHub repository: alx-low_level_programming
 •	Directory: 0x0C-more_malloc_free
 •	File: 0-malloc_checked.c
-
-Task 1
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------------------------------------------------------
+##Task 1
 Write a function that concatenates two strings.
 •	Prototype: char *string_nconcat(char *s1, char *s2, unsigned int n);
 •	The returned pointer shall point to a newly allocated space in memory, which contains s1, followed by the first n bytes of s2, and null terminated
@@ -24,14 +25,18 @@ Repo:
 •	GitHub repository: alx-low_level_programming
 •	Directory: 0x0C-more_malloc_free
 •	File: 1-string_nconcat.c
-TASK 2
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+##TASK 2
 Write a function that allocates memory for an array, using malloc.
 •	Prototype: void *_calloc(unsigned int nmemb, unsigned int size);
 •	The _calloc function allocates memory for an array of nmemb elements of size bytes each and returns a pointer to the allocated memory.
 •	The memory is set to zero
 •	If nmemb or size is 0, then _calloc returns NULL
 •	If malloc fails, then _calloc returns NULL
-TASK 3
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+##TASK 3
 Write a function that creates an array of integers.
 •	Prototype: int *array_range(int min, int max);
 •	The array created should contain all the values from min (included) to max (included), ordered from min to max
