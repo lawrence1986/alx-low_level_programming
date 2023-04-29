@@ -3,7 +3,7 @@
 
 /**
 * print_listint - prints all the elements of a listint_t list
-* @h: The head of the list to print
+* @h: The head of the listint_t to print
 *
 * Return: number of figure in list_t list.
 */
