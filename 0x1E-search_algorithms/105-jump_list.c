@@ -3,7 +3,7 @@
 /**
  * jump_list - Searching for an algorithm in a sorted singly
  *             linked list of integers using jump search.
- * @listint_t: A pointer to the  head of the linked list to search.
+ * @list: A pointer to the  head of the linked list to search.
  * @size: The number of nodes in the list.
  * @value: The value to search for.
  *
@@ -15,13 +15,12 @@
  */
 listint_t *jump_list(listint_t *list, size_t size, int value)
 {
-	size_t step, step_size;
+	size_t step = 0, step_size;
 	listint_t *node, *jump;
 
-	if (list == NULL || size == 0)
+	if (!list || size == 0)
 		return (NULL);
 
-	step = 0;
 	step_size = sqrt(size);
 	for (node = jump = list; jump->index + 1 < size && jump->n < value;)
 	{
@@ -40,6 +39,12 @@ listint_t *jump_list(listint_t *list, size_t size, int value)
 	for (; node->index < jump->index && node->n < value; node = node->next)
 		printf("Value checked at index [%ld] = [%d]\n", node->index, node->n);
 	printf("Value checked at index [%ld] = [%d]\n", node->index, node->n);
-
-	return (node->n == value ? node : NULL);
+	if (node->n == value)
+	{
+		return (node);
+	}
+	else
+	{
+		return (NULL);
+	}
 }
